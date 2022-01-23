@@ -1,0 +1,32 @@
+[
+	{
+		"id":1,
+		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+		"title": "Fancy Product",
+		"pricemin":"40.00",
+		"pricemax": "80.00",
+		"starts": 0,
+		"priceminlower":0,
+		"sale":0
+	},
+	{
+		"id":2,
+		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+		"title": "Fancy Product1",
+		"pricemin": "20.00",
+		"pricemax": "18.00",
+		"starts": 5,
+		"priceminlower":1,
+		"sale":1
+	},
+	{
+		"id":3,
+		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
+		"title": "Fancy Product2",
+		"pricemin": "20.00",
+		"pricemax": "18.00",
+		"starts": 4,
+		"priceminlower":1,
+		"sale":1
+	}
+]

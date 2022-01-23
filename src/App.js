@@ -1,25 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/header';
+import Headerx from './components/headerx';
+import Headery from './components/headery';
+import Navigation from './components/navigation';
+import Cover from './components/cover';
+import Body from './components/body';
+import FirstSection from './components/first_section';
+import React, { Component, useReducer, useState } from 'react';
+import { TYPES } from "./actions/appactions";
+import { shoppingInitialState, Count, Addcart } from "./reducers/actionsapp";
 
 function App() {
+  const { counter , incrementa } = Count();
+
+  const { cart , add } = Addcart([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Headerx counter={ counter }/>
+      <Cover />
+      <Body count={ incrementa } products={ shoppingInitialState } items={cart} create={add} />
     </div>
-  );
+  )
 }
 
 export default App;
