@@ -1,0 +1,43 @@
+        <Cover />
+        <Body count={ incrementa } products={ shoppingInitialState } items={cart} create={add} />
+
+            [
+      id:1,
+      title:'Cantidad 1'
+    ],
+    [
+      id:2,
+      title:'Cantidad 2'
+    ],
+    [
+      id:3,
+      title:'Cantidad 3'
+    ],
+    [
+      id:4,
+      title:'Cantidad 4'
+    ],
+    [
+      id:5,
+      title:'Cantidad 5'
+    ],
+    [
+      id:6,
+      title:'Cantidad 6'
+    ],
+    [
+      id:7,
+      title:'Cantidad 7'
+    ],
+    [
+      id:8,
+      title:'Cantidad 8'
+    ],
+    [
+      id:9,
+      title:'Cantidad 9'
+    ],
+    [
+      id:10,
+      title:'Cantidad 10'
+    ]

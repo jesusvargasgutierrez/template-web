@@ -22,25 +22,21 @@ export const Addcart = (p) => {
 
   const add = (p) => {
     setcart([...cart, p]);
-    //setcart(prevLightState => ({...prevLightState, ...p}))
-    //setcart(cart => {...cart, p});
-    //setcart(arr => [...arr, `${arr.length}`]);
-    //setcart(oldArray => [...oldArray, p]);
   }
 
   return { cart, add }
 }
 
-export function shoppingReducer(state, action) {
-  switch (action.type) {
-    case TYPES.ADD_TO_CART: {
-    }
-    case TYPES.REMOVE_ONE_FROM_CART: {
-    }
-    case TYPES.REMOVE_ALL_FROM_CART: {
-    }
-    case TYPES.CLEAR_CART:
-    default:
-      return state;
+export const quantityprod = {
+  qnt: [1,2,3,4,5,6,7,8,9]
+}
+
+export const Total = (quantity) => {
+  const [total, settotal] = useState(0);
+
+  const totals = (quantity) => {
+    settotal([quantity * 10]);
   }
+
+  return { total, totals }
 }
