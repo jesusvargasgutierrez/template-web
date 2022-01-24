@@ -23,14 +23,17 @@ const Listcart = (props) => {
     function removeitem(iditem){
         //console.log(iditem);
 
-        //console.log(mycart);
-
         //var res = mycart.find((item) => item.id === iditem);
         var res = mycart.filter((item) => item.id !== iditem);
+        //var res = mycart.indexOf(iditem);
 
-        console.log(res);
+        /*res.map((item) => {
+            setcart([...mycart, item]);
+        })*/
 
-        setcart([...mycart, res]);
+        setcart(res);
+
+        //console.log(res);
 
         //console.log(mycart);
     }
@@ -73,7 +76,7 @@ const Listcart = (props) => {
                                     <strong>
                                         ${item.saleprice}
                                     </strong>&nbsp;
-                                    <button onClick={(e) => removeitem(item.id)}>
+                                    <button className="btn" onClick={(e) => removeitem(item.id)}>
                                         <i className="text-danger fas fa-trash-alt"></i>
                                     </button>
                                 </div>
@@ -85,7 +88,7 @@ const Listcart = (props) => {
                         <span className="text-muted">Back to shop</span>
                     </div>
                 </div>
-                <div className="col-md-4 summary">
+                <div className="col-md-4 summary mt-3">
                     <div>
                         <h5><b>Resumen</b></h5>
                     </div>

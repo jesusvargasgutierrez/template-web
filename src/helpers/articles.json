@@ -2,7 +2,7 @@
 	{
 		"id":1,
 		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-		"title": "Fancy Product",
+		"title": "Fancy Product1",
 		"pricemin":"40.00",
 		"pricemax": "80.00",
 		"saleprice": "55.00",
@@ -13,7 +13,7 @@
 	{
 		"id":2,
 		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-		"title": "Fancy Product1",
+		"title": "Fancy Product2",
 		"pricemin": "10.00",
 		"pricemax": "18.00",
 		"saleprice": "10.00",
@@ -24,7 +24,7 @@
 	{
 		"id":3,
 		"photo": "https://dummyimage.com/450x300/dee2e6/6c757d.jpg",
-		"title": "Fancy Product2",
+		"title": "Fancy Product3",
 		"pricemin": "18.00",
 		"pricemax": "20.00",
 		"saleprice": "19.00",
