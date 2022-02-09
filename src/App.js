@@ -4,6 +4,7 @@ import Header from './components/header';
 import Navigation from './components/navigation';
 import Body from './components/body';
 import Listcart from './components/Listcart';
+import Product from './components/Product';
 import FirstSection from './components/first_section';
 import React, { Component, useReducer, useState } from 'react';
 import { shoppingInitialState, Count, Addcart } from "./reducers/actionsapp";
@@ -30,6 +31,7 @@ function App() {
         <Route path="/listcart" element={
             <Listcart items={cart}/>
         }/>
+        <Route path="/product/:id_product" element={<Product />}/>
       </Routes>
     </Router>
   )

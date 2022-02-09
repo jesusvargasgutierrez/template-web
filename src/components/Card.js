@@ -1,4 +1,7 @@
 import React, { Component, useState } from 'react';
+import {
+    Link
+} from "react-router-dom";
 
 function Card (props) {
     function stylevis(flag){
@@ -40,7 +43,9 @@ function Card (props) {
                 <img className="card-img-top" src={props.data.photo} alt="..." />
                 <div className="card-body p-4">
                     <div className="text-center">
-                        <h5 className="fw-bolder">{props.data.title}</h5>
+                        <h5 className="fw-bolder">
+                            <Link to={`/product/${props.data.id}`}>{props.data.title}</Link>
+                        </h5>
                         <input type="hidden" value="2" />
                         <div className="d-flex justify-content-center small text-warning mb-2">
                             <div className="bi-star-fill"></div>
