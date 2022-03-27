@@ -1,3 +1,4 @@
+import Viewp from './Viewp';
 import React, { Component, useRef, useState } from 'react';
 import {
     useParams
@@ -9,7 +10,7 @@ function Product (props) {
 
 	return (
         <div>
-            <h1>producto {params.id_product} </h1>
+            <Viewp productid={params.id_product} />
         </div>
 	)
 }

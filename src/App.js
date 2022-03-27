@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import './css/style1.css';
 import Header from './components/header';
 import Navigation from './components/navigation';
 import Body from './components/body';
