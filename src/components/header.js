@@ -26,7 +26,7 @@ const Header = (props) => {
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#!">All Products</a></li>
+                                <li><Link className="dropdown-item" to="/home">All Products</Link></li>
                                 <li><a className="dropdown-item" href="#!">Popular Items</a></li>
                                 <li><a className="dropdown-item" href="#!">New Arrivals</a></li>
                             </ul>

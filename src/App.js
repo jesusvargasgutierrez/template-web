@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import './css/style1.css';
+import './css/stylehome.css';
 import Header from './components/header';
 import Navigation from './components/navigation';
 import Body from './components/body';
 import Listcart from './components/Listcart';
 import Product from './components/Product';
+import Home from './components/Home';
 import FirstSection from './components/first_section';
 import React, { Component, useReducer, useState } from 'react';
 import { shoppingInitialState, Count, Addcart } from "./reducers/actionsapp";
@@ -33,6 +35,7 @@ function App() {
             <Listcart items={cart}/>
         }/>
         <Route path="/product/:id_product" element={<Product />}/>
+        <Route path="/home" element={<Home />}/>
       </Routes>
     </Router>
   )
