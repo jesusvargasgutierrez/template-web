@@ -23,6 +23,13 @@ const Header = (props) => {
                                 </div>
                             </Link>
                         </li>
+                        <li className="nav-item">
+                            <Link to="/dashboard">
+                                <div className="nav-link">
+                                    Dashboard
+                                </div>
+                            </Link>
+                        </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
